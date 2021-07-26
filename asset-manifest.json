@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/saaspect/static/css/main.e19aeaa4.chunk.css",
+    "main.js": "/saaspect/static/js/main.dc3ecbd1.chunk.js",
+    "main.js.map": "/saaspect/static/js/main.dc3ecbd1.chunk.js.map",
+    "runtime-main.js": "/saaspect/static/js/runtime-main.ed8acde3.js",
+    "runtime-main.js.map": "/saaspect/static/js/runtime-main.ed8acde3.js.map",
+    "static/css/2.68b64559.chunk.css": "/saaspect/static/css/2.68b64559.chunk.css",
+    "static/js/2.2ae98fa5.chunk.js": "/saaspect/static/js/2.2ae98fa5.chunk.js",
+    "static/js/2.2ae98fa5.chunk.js.map": "/saaspect/static/js/2.2ae98fa5.chunk.js.map",
+    "index.html": "/saaspect/index.html",
+    "static/css/2.68b64559.chunk.css.map": "/saaspect/static/css/2.68b64559.chunk.css.map",
+    "static/css/main.e19aeaa4.chunk.css.map": "/saaspect/static/css/main.e19aeaa4.chunk.css.map",
+    "static/js/2.2ae98fa5.chunk.js.LICENSE.txt": "/saaspect/static/js/2.2ae98fa5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed8acde3.js",
+    "static/css/2.68b64559.chunk.css",
+    "static/js/2.2ae98fa5.chunk.js",
+    "static/css/main.e19aeaa4.chunk.css",
+    "static/js/main.dc3ecbd1.chunk.js"
+  ]
+}
