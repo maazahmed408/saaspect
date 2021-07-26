@@ -7,7 +7,6 @@ import { signout, isAuthenticated } from "../utils/auth";
 const Sidebar = () => {
 	const { menu } = useContext(MenuContext);
 	const jwt = isAuthenticated();
-	const { user } = jwt;
 
 	return (
 		<Container>

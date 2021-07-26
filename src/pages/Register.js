@@ -39,14 +39,15 @@ const Register = () => {
 
 	const onSubmit = (event) => {
 		event.preventDefault();
+
 		if (validator.validate(email)) {
-			Signup({ name, email, password, number, role })
-				.then((data) => setRedirect(true))
-				.catch((err) => alert(err));
-		} else {
-			toast.error("Invalid email");
 			setRedirect(false);
+			return toast.error("Invalid Email");
 		}
+
+		return Signup({ name, email, password, number, role })
+			.then((data) => setRedirect(true))
+			.catch((err) => alert(err));
 	};
 
 	useEffect(() => {

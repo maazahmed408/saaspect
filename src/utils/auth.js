@@ -38,15 +38,18 @@ export const Login = (user) => {
 	})
 		.then(async (response) => {
 			const data = await response.json();
-			if (response.status === 200) {
+			const { msg } = data;
+
+			if (msg === "true") {
 				toast.success("User Signed In Successfully");
 				console.log(data);
 				return data;
 			} else {
-				toast.error(data);
-				return data;
+				toast.error(msg);
+				console.log(data.msg);
 			}
 		})
+
 		.catch((err) => alert(err));
 };
 
