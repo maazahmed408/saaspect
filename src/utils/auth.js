@@ -16,9 +16,8 @@ export const Signup = (user) => {
 			const data = await response.json();
 			if (response.status == 200) {
 				toast.success(data);
-				return;
+				return true;
 			} else {
-				console.log(data);
 				toast.error(data);
 			}
 		})
@@ -39,14 +38,14 @@ export const Login = (user) => {
 		.then(async (response) => {
 			const data = await response.json();
 			const { msg } = data;
-
 			if (msg === "true") {
 				toast.success("User Signed In Successfully");
 				console.log(data);
 				return data;
 			} else {
 				toast.error(msg);
-				console.log(data.msg);
+				toast.error(data);
+				return false;
 			}
 		})
 

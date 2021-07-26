@@ -15,8 +15,12 @@ const Signin = () => {
 		e.preventDefault();
 
 		Login({ email, password }).then((data) => {
-			authenticate(data);
-			setRedirect(true);
+			if (data) {
+				authenticate(data);
+				setRedirect(true);
+			} else {
+				setRedirect(data);
+			}
 		});
 	};
 

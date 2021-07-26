@@ -22,6 +22,14 @@ const Client = () => {
 				<h1>
 					You are not Authorised !! Only Admins and Clients can have Access here
 				</h1>
+				<h2>
+					Your Post Request does not contain role of client but get details
+					contain so we can't select client in registrations
+				</h2>
+				<h3>
+					"UserCred validation failed: role: `client` is not a valid enum value
+					for path `role`."
+				</h3>
 			</div>
 		);
 	}

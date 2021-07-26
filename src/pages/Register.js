@@ -34,19 +34,15 @@ const Register = () => {
 	const getRole = async () => {
 		const response = await fetch("https://api.saaspect.com/user/roles");
 		const data = await response.json();
+		console.log(data[2]);
 		setRoles(data);
 	};
 
 	const onSubmit = (event) => {
 		event.preventDefault();
 
-		if (validator.validate(email)) {
-			setRedirect(false);
-			return toast.error("Invalid Email");
-		}
-
-		return Signup({ name, email, password, number, role })
-			.then((data) => setRedirect(true))
+		Signup({ name, email, password, number, role })
+			.then((value) => setRedirect(value))
 			.catch((err) => alert(err));
 	};
 
@@ -101,7 +97,7 @@ const Register = () => {
 						<Select onChange={handleChange("role")}>
 							<option>select</option>
 							{roles.map((role) => (
-								<option key={role}>{role}</option>
+								<option key={roles.indexOf(role)}>{role}</option>
 							))}
 						</Select>
 					</FormGroup>
